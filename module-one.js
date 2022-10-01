@@ -415,3 +415,16 @@
 
 // ----------------------------------------GAME-----------------------------------------
 
+const x = Math.round(Math.random() * 100 + 1);
+let userInput;
+
+do {
+userInput = Number(prompt('Enter a number (1-100).'));
+if (x > userInput) {
+    console.log('x >', userInput);
+} else if (x < userInput) {
+    console.log('x <', userInput);
+}
+} while(x !==userInput)
+
+console.log('You guessed!!!');
