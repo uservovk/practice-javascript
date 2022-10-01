@@ -1,37 +1,3 @@
-// const totalPrice = 108;
-// const age = 36;
-// const userName = 'Alex';
-// const message = 'Hello World';
-// const isOpen = true;
-// const shouldConfirm = false;
-
-// let height = 123;
-// height = 54;
-
-// console.log(5)
-// console.log(age)
-// console.log(message)
-// console.log('My age is:', age, 'years old!')
-// console.log('My name is:', userName, '.')
-
-// const type = typeof 'hi there';
-// console.log(type);
-// const weight = typeof 156;
-// console.log(weight);
-// const isClosed = typeof false;
-// console.log(isClosed);
-
-// // alert('dnvfjnv')
-// // console.log('Say:', message)
-
-// // const shouldRenew = confirm('Would like to renew subscription?');
-// // console.log(shouldRenew);
-
-// // let quantity = prompt('Write the number of pessengers');
-// // quantity = Number(quantity);
-// // console.log(quantity);
-// // console.log(typeof quantity);
-
 // let elementWidth = "50px";
 // const result = Number.parseInt(elementWidth);
 // console.log(typeof result);
@@ -375,7 +341,7 @@
 //       message = 'Our manager will call you back';
 // }
 // console.log(message);
-  
+
 
 // function checkAge(age) {
 //   if (age>=18) {
@@ -434,14 +400,18 @@
 //     return "The order is accepted, our manager will contact you";
 // }
 
-let balance = 10000;
-const payment = 2000;
-console.log(`Total price is ${payment}. Checking your balance`);
-if (payment <= balance) {
-    console.log('ok');
-    balance -= payment;
-    console.log(`Your balance is ${balance}.`);
-} else {
-    console.log('Not enough funds');
-}
-console.log('Operation completed!');
+// let balance = 10000;
+// const payment = 2000;
+// console.log(`Total price is ${payment}. Checking your balance`);
+// if (payment <= balance) {
+//     console.log('ok');
+//     balance -= payment;
+//     console.log(`Your balance is ${balance}.`);
+// } else {
+//     console.log('Not enough funds');
+// }
+// console.log('Operation completed!');
+
+
+// ----------------------------------------GAME-----------------------------------------
+
