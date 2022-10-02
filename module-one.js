@@ -79,31 +79,44 @@
 // const canAccessSite = sub === 'pro' || sub === 'vip';
 // console.log('Can access the site?', canAccessSite);
 
+
 // function makeMessage (name, price) {
 //     const message =`You picked ${name}, price per item is ${price} credits`;
 //     return message;
-// };
+// }
+
+
 // function calculateTotalPrice (orderedQuantity, pricePerItem) {
 //     const totalPrice = orderedQuantity*pricePerItem;
 //     return totalPrice;
-// };
+// }
+
+
 // function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
 //     const message=`You ordered droids worth ${orderedQuantity*pricePerDroid+deliveryFee} credits. Delivery (${deliveryFee} credits) is included in total price.`
 //     return message;
 // }
+
+
 // function isAdult(age) {
 //     const passed = age>=18;
 //     return passed;
 // }
+
+
 // function isValidPassword(password) {
 //     const SAVED_PASSWORD = 'jqueryismyjam';
 //     const isMatch = password===SAVED_PASSWORD;
 //     return isMatch;
 // }
+
+
 // function isAdult(age) {
 //     const canDrinkIf = age>=21;
 //     return canDrinkIf;
 // }
+
+
 // function checkAge(age) {
 //     let message;
 //     if (age >=18) {
@@ -113,15 +126,8 @@
 //     }
 //     return message;
 // }
-// function checkDegree(degree) {
-//     let message;
-//     if (degree === 'pedagogical') {
-//         message = 'You are acceptable for teaching position';
-//     } else {
-//         message = 'You are not acceptable for trraching position';
-//     }
-//     return message;
-// }
+
+
 // function checkStorage(available, ordered) {
 //   let message;
 // if(ordered>available){
@@ -131,6 +137,7 @@
 // }
 //   return message;
 // }
+
 
 // function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
 //   let message;
@@ -143,6 +150,7 @@
 // }
 //   return message;
 // }
+
 
 // function checkPassword(password) {
 //   const ADMIN_PASSWORD = 'jqueryismyjam';
@@ -157,6 +165,7 @@
 //   return message;
 // }
 
+
 // function checkStorage(available, ordered) {
 //   let message;
 //   if(ordered===0) {
@@ -169,24 +178,25 @@
 //   return message;
 // }
 
+
 // function isNumberInRange(start, end, number) {
 //   const isInRange = number>=start&&number<=end;
-
 //   return isInRange;
 // }
 
+
 // function checkIfCanAccessContent(subType) {
 //   const canAccessContent = subType==='pro'||subType==='vip';
-
 //   return canAccessContent;
 // }
+
 
 // function isNumberNotInRange(start, end, number) {
 //   const isInRange = number >= start && number <= end;
 //   const isNotInRange = !isInRange;
-
 //   return isNotInRange;
 // }
+
 
 // function getDiscount(totalSpent) {
 //   const BASE_DISCOUNT = 0;
@@ -206,11 +216,13 @@
 //   return discount;
 // }
 
+
 // function checkStorage(available, ordered) {
 //   let message;
 //   message=ordered>available?'Not enough goods in stock!':'The order is accepted, our manager will contact you';
 //   return message;
 // }
+
 
 // function checkPassword(password) {
 //   const ADMIN_PASSWORD = "jqueryismyjam";
@@ -219,9 +231,9 @@
 //   return message;
 // }
 
+
 // function getSubscriptionPrice(type) {
 //   let price;
-
 //  switch (type) {
 //     case 'starter':
 //       price = 0;
@@ -237,6 +249,7 @@
 //   }
 //   return price;
 // }
+
 
 // function checkPassword(password) {
 //   const ADMIN_PASSWORD = "jqueryismyjam";
@@ -254,9 +267,9 @@
 //   return message;
 // }
 
+
 // function getShippingCost(country) {
 //   let message;
-
 // switch(country){
 //   case 'China':
 //     price=100;
@@ -280,10 +293,12 @@
 //   return message;
 // }
 
+
 // function getNameLength(name) {
 //   const message = `Name ${name} is ${name.length} characters long`;
 //   return message;
 // }
+
 
 // const courseTopic = "JavaScript essentials";
 // const courseTopicLength = courseTopic.length;
@@ -296,6 +311,7 @@
 //   return substring;
 // }
 
+
 // function formatMessage(message, maxLength) {
 //   let result;
 // if(message.length<=maxLength){
@@ -306,10 +322,12 @@
 //   return result;
 // }
 
+
 // function normalizeInput(input) {
 //   const normalizedInput = input.toLowerCase();
 //   return normalizedInput;
 // }
+
 
 // function checkForName(fullName, name) {
 //   const result = fullName.includes(name);
@@ -350,6 +368,7 @@
 //   return "You are a minor";
 // }
 
+
 // function checkPassword(password) {
 //   const ADMIN_PASSWORD = "jqueryismyjam";
 //   if (password === ADMIN_PASSWORD) {
@@ -357,6 +376,7 @@
 //   }
 //   return "Access denied, wrong password!";
 // }
+
 
 // for (let i = 0; i < 5; i += 1){
 //   console.log(i);
@@ -379,6 +399,7 @@
 // }
 // console.log('Total salary:', totalSalary);
 
+
 // const min = 6;
 // const max = 13;
 // let total = 0;
@@ -391,6 +412,7 @@
 // }
 // console.log('Total:', total);
 
+
 // function checkStorage(available, ordered) {
 //   if (ordered === 0) {
 //     return "Your order is empty!";
@@ -399,6 +421,7 @@
 //   }
 //     return "The order is accepted, our manager will contact you";
 // }
+
 
 // let balance = 10000;
 // const payment = 2000;
@@ -415,16 +438,68 @@
 
 // ----------------------------------------GAME-----------------------------------------
 
-const x = Math.round(Math.random() * 100 + 1);
-let userInput;
+// const x = Math.round(Math.random() * 100 + 1);
+// let userInput;
+// do {
+// userInput = Number(prompt('Enter a number (1-100).'));
+// if (x > userInput) {
+//     console.log('x >', userInput);
+// } else if (x < userInput) {
+//     console.log('x <', userInput);
+// }
+// } while(x !==userInput)
+// console.log('You guessed!!!');
+// -----------------------------------------------------------------------------------------
 
-do {
-userInput = Number(prompt('Enter a number (1-100).'));
-if (x > userInput) {
-    console.log('x >', userInput);
-} else if (x < userInput) {
-    console.log('x <', userInput);
-}
-} while(x !==userInput)
 
-console.log('You guessed!!!');
+// const a = 120;
+// const b = 170;
+// if (a > 100 && b > 100) {
+//     console.log(a > b ? a : b);
+//     // console.log(Math.max(a, b));
+// } else {
+//     console.log(b + 323);
+// }
+
+
+// let link = 'https://my-site.com/about';
+// if (!link.endsWith('/'))
+//     // (link[link.length-1]!=='/')
+        // link += !link.endsWith('/') ? '/' : '';
+//     {
+//     link += '/';
+// }
+// console.log(link);
+
+
+// let link = 'https://somesite.com/about';
+// if (!link.endsWith('/') && link.includes('my-site')) {
+//     link += '/';
+// }
+// console.log(link);
+
+
+// const max = 100;
+// const min = 20;
+// for (i = min; i <= max; i += 1){
+//     if (i % 5 === 0) {
+//         console.log(i);
+//     }
+// }
+
+
+// const login = prompt('enter login');
+// if (login !== null) {
+//     if (login === 'admin') {
+//         const password = prompt('enter password');
+//         if (password === 'it is admin') {
+//             console.log('welcome');
+//         } else {
+//             console.log('wrong password');
+//         }
+// } else {
+//     console.log('I do not know you');
+// }
+// } else {
+//     console.log('canceled');
+// }
