@@ -51,7 +51,59 @@
 
 
 // if you do not need index or do not need to change element of array then use this:
-const colors = ['red', 'yellow', 'pink', 'green', 'purple', 'orange', 'blue'];
-for (const color of colors) {
-        console.log(color);
+// const colors = ['red', 'yellow', 'pink', 'green', 'purple', 'orange', 'blue'];
+// for (const color of colors) {
+//         console.log(color);
+// }
+
+
+// const cart = [12,33,99,23,24, 54, 75, 56, 34, 23];
+// let total = 0;
+// for (let i = 0; i < cart.length; i += 1){
+//         // console.log(cart[i]);
+//         cart[i] = Math.round(cart[i] * 1.1);
+//         total += cart[i];
+// }
+// console.log(cart);
+// console.log('Total:', total);
+
+
+// const customers = [43, 45, 75, 34, 23];
+// let total = 0;
+// for (let customer of customers) {
+//         total += customer;
+// }
+// console.log('Total:', total);
+
+
+// const numbers = [23, 24, 25, 22, 11, 4, 6, 35, 66];
+// let total = 0;
+// // for (let i = 0; i < numbers.length; i += 1){
+// //         // console.log(numbers[i]);
+// //         if (numbers[i] % 2 === 0) {
+// //                 // console.log('even!!!');
+// //                 total += numbers[i];
+// //         }
+// // }
+// for (const number of numbers) {
+//         if (number % 2 === 0) {
+//                 total += number;
+//         }
+// }
+// console.log('Total:', total);
+
+
+const logins = ['dvsdvsv', 'savfv', 'asdfg', 'refrvc'];
+const loginToFind = 'asdfg';
+let message= '';
+for (let i = 0; i < logins.length; i += 1){
+        const login = logins[i];
+        if (login !== loginToFind) {
+                message = `no login ${loginToFind}`;
+        } 
+        // console.log(login);
 }
+console.log(message);
+// for (const login of logins) {
+//         console.log(login);
+// }
