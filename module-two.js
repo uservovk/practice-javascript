@@ -92,18 +92,53 @@
 // }
 // console.log('Total:', total);
 
+// --------------------------------------------------------
 
-const logins = ['dvsdvsv', 'savfv', 'asdfg', 'refrvc'];
-const loginToFind = 'asdfg';
-let message= '';
-for (let i = 0; i < logins.length; i += 1){
-        const login = logins[i];
-        if (login !== loginToFind) {
-                message = `no login ${loginToFind}`;
-        } 
-        // console.log(login);
-}
-console.log(message);
-// for (const login of logins) {
-//         console.log(login);
+// const logins = ['dvsdvsv', 'savfv', 'asdfg', 'refrvc'];
+// const loginToFind = 'asdfg';
+// let message = `There is no login ${loginToFind}`;
+
+// for (let i = 0; i < logins.length; i += 1){
+//         const login = logins[i];
+
+//         console.log('Login:', login);
+//         console.log(`${login}===${loginToFind}:`, login === loginToFind);
+//         if (login === loginToFind) {
+//                 console.log('Yahoo!!!');
+//                 message = `I found login ${loginToFind}`;
+//                 break;
+//         }
 // }
+// console.log(message);
+
+
+// for (const login of logins) {
+//         console.log('Login:', login);
+//         console.log(`${login}===${loginToFind}:`, login === loginToFind);
+//         if (login === loginToFind) {
+//                 console.log('Yahoo!!!');
+//                 message = `I found login ${loginToFind}`;
+//                 break;
+//         }
+// }
+// console.log(message);
+
+
+// console.log(logins.includes(loginToFind));
+
+
+// console.log(logins.includes(loginToFind) ?
+//         `I found login ${loginToFind}` :
+//         `There is no login ${loginToFind}`);
+// ----------------------------------------------------------------------------------------------
+
+
+const numbers = [43, 54, 3, 44, 23, 5, 57];
+let smallestNumber = numbers[0];
+
+for (let number of numbers) {
+        if (number < smallestNumber) {
+                smallestNumber=number;
+        }
+}
+console.log(smallestNumber);
