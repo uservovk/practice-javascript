@@ -133,12 +133,103 @@
 // ----------------------------------------------------------------------------------------------
 
 
-const numbers = [43, 54, 3, 44, 23, 5, 57];
-let smallestNumber = numbers[0];
+// const numbers = [43, 54, 3, 44, 23, 5, 57, 1];
+// let smallestNumber = numbers[0];
 
-for (let number of numbers) {
-        if (number < smallestNumber) {
-                smallestNumber=number;
-        }
-}
-console.log(smallestNumber);
+// for (let number of numbers) {
+//         if (number < smallestNumber) {
+//                 smallestNumber=number;
+//         }
+// }
+// console.log(smallestNumber);
+
+// -----------------------------------------------------------------
+
+// const friends = ['Alex', 'Tom', 'Ella', 'Mike'];
+// // let string = '';
+// // for (const friend of friends) {
+// //         string += friend + ',';
+// // }
+// // string = string.slice(0, string.length - 1);
+
+// const string = friends.join(', ');
+// console.log(string);
+
+// ---------------------------------------------------------------
+
+// const string = 'JavaScript';
+// const letters = string.split('');
+// let invertedString = '';
+// console.log(letters);
+// for (const letter of letters) {
+//         console.log(letter);
+//         invertedString += letter === letter.toLowerCase()
+//                 ? letter.toUpperCase()
+//                 : letter.toLowerCase();
+
+//         // if (letter === letter.toLowerCase()) {
+//         //         console.log('it is a lowercase letter -', letter);
+//         //         invertedString += letter.toUpperCase();
+//         // } else {
+//         //         console.log('it is an uppercase letter - ', letter);
+//         //         invertedString += letter.toLowerCase();
+//         // }
+// }
+
+// console.log('Inverted string:', invertedString);
+
+// --------------------------------------------------------------------------------
+
+// const title = 'Top 5 benefits of React Framework';
+
+// // const normalizedTitle = title.toLowerCase();
+// // console.log(normalizedTitle);
+// // const words = normalizedTitle.split(' ');
+// // console.log(words);
+// // const slug = words.join('-');
+// // console.log(slug);
+
+// const slug1 = title.toLowerCase().split(' ').join('-');
+// console.log(slug1);
+
+// ----------------------------------------------------------------------------------
+
+// const array1 = [1, 2, 3, 4, 5];
+// const array2 = [6, 7, 8, 9, 10, 11, 12];
+// let total = 0;
+// const numbers = array1.concat(array2);
+// for (const number of numbers) {
+//         total += number;
+// }
+// console.log(total);
+
+// let total1 = 0;
+// let total2 = 0;
+// let total = 0;
+// for (const array of array1){
+//         total1 += array;
+// }
+// for (const array of array2) {
+//         total2 += array;
+// }
+// console.log(total=total1+total2);
+
+// ----------------------------------------------------------------------------
+
+const cards = [
+        'card-1',
+        'card-2',
+        'card-3',
+        'card-4',
+        'card-5'
+];
+const cardToRemove = 'card-3';
+const index = cards.indexOf(cardToRemove);
+cards.splice(index, 1);
+console.table(cards);
+cards.splice(1, 0, 'cards-extra', 12);
+console.table(cards);
+cards.splice(2, 1, 555);
+console.table(cards);
+
+// ---------------------------------------------------------------------------------
