@@ -216,20 +216,85 @@
 
 // ----------------------------------------------------------------------------
 
-const cards = [
-        'card-1',
-        'card-2',
-        'card-3',
-        'card-4',
-        'card-5'
-];
-const cardToRemove = 'card-3';
-const index = cards.indexOf(cardToRemove);
-cards.splice(index, 1);
-console.table(cards);
-cards.splice(1, 0, 'cards-extra', 12);
-console.table(cards);
-cards.splice(2, 1, 555);
-console.table(cards);
+// const cards = [
+//         'card-1',
+//         'card-2',
+//         'card-3',
+//         'card-4',
+//         'card-5'
+// ];
+// const cardToRemove = 'card-3';
+// const index = cards.indexOf(cardToRemove);
+// cards.splice(index, 1);
+// console.table(cards);
+// cards.splice(1, 0, 'cards-extra', 12);
+// console.table(cards);
+// cards.splice(2, 1, 555);
+// console.table(cards);
 
 // ---------------------------------------------------------------------------------
+
+
+// ------------F U N C T I O N S----------
+
+
+// function splitMessage(message, delimiter) {
+//         let words;
+//         words=message.split(delimiter);
+//         return words;
+// }
+// -----------------------------------------------------------
+
+// function calculateEngravingPrice(message, pricePerWord) {
+
+// let number;
+// number=message.split(' ').length*pricePerWord;
+// return number;
+// }
+// ------------------------------------------------------------------------------------
+
+// function createArrayOfNumbers(min, max) {
+
+// const numbers = [];
+// for(let i=min; i<=max; i+=1){
+//         numbers.push(i);
+// }
+//         return numbers;
+// }
+
+// --------------------------------------------------------------------------------
+
+// function filterArray(numbers, value) {
+
+// const list=[];
+
+//         for (const number of numbers) {
+//         if (number > value) {
+//         list.push(number);
+// }
+// }       return list;
+// }
+
+// -------------------------------------------------------------------------------
+
+// function checkFruit(fruit) {
+// const fruits = ["apple", "plum", "pear", "orange"];
+
+// return fruits.includes(`${fruit}`);
+// }
+
+// -----------------------------------------------------------------------------
+
+// function getCommonElements(array1, array2) {
+// const common=[];
+// for(const number of array1){
+// if(array2.includes(number)){
+//         common.push(number);
+//         console.log(common)
+// }
+// }
+//         return common;
+// }
+
+// ----------------------------------------------------------------------------------
+
