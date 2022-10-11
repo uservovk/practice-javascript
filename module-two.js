@@ -298,3 +298,178 @@
 
 // ----------------------------------------------------------------------------------
 
+// function compare(value) {
+//     if (value > 50) {
+//         return 'number bigger then 50';
+//     } return 'number smaller then 50';
+// }
+// console.log('result is:', compare(40));
+// console.log('result is:', compare(55));
+// -----------------------------------------------------------------------
+
+// const fnA = function () {
+//     console.log('Function A is running');
+//     fnB();
+// }
+
+// const fnB = function () {
+//     console.log('Function B is running');
+//     fnC();
+// }
+
+// const fnC = function () {
+//     console.log('Function C is running');
+// }
+
+// fnA();
+
+// ------------------------------------------------------------------------
+
+// const calculateTotalPrice = function (items) {
+//     console.log('items inside function:', items);
+//     let total = 0;
+//     for (const item of items) {
+//         total += item;
+//     }
+//     return total;
+// }
+// const result = calculateTotalPrice([1, 2, 3, 4, 5]);
+// console.log(`Sum: ${result}`);
+// console.log(calculateTotalPrice([6, 7, 8, 9, 10]));
+// console.log(calculateTotalPrice([11, 12, 13, 14, 15]));
+
+// -----------------------------------------------------------------------------
+
+// const logins = ['qwer', 'asdf', 'zxcv', 'qaz'];
+
+// const findLogin = function (allLogins, loginToFind) {
+
+//     for (const login of allLogins) {
+//         if (login === loginToFind) {
+//             return `Login ${loginToFind} is found`;
+//         }
+//     }
+//     return `Login ${loginToFind} is not found`;
+// }
+
+// const findLogin = function (allLogins, loginToFind) {
+//     const message = allLogins.includes(loginToFind) ?
+//         `Login ${loginToFind} is found` :
+//         `Login ${loginToFind} is not found`;
+//     return message;
+// }
+
+// const findLogin = function (allLogins, loginToFind) {
+//     return allLogins.includes(loginToFind) ?
+//         `Login ${loginToFind} is found` :
+//         `Login ${loginToFind} is not found`;
+// }
+
+// console.log(findLogin(logins,'eqew'));
+// console.log(findLogin(logins,'asdf'));
+// console.log(findLogin(logins,'qwaszx'));
+// console.log(findLogin(logins,'zxcv'));
+// --------------------------------------------------------------------------
+
+
+// const compare = function (numbers) {
+//     let smallestNumber = numbers[0];
+
+//     for (const number of numbers) {
+//         if (number < smallestNumber) {
+//             smallestNumber = number;
+//         }
+//     }
+//     return smallestNumber;
+// }
+// console.log(compare([12, 32, 42]));
+// -----------------------------------------------------------------------------
+
+// const changeCase = function (string) {
+//     const letters = string.split('');
+//     let invertedString = '';
+
+//     for (const letter of letters) {
+
+//         invertedString += letter === letter.toLowerCase()
+//             ?letter.toUpperCase()
+//             :letter.toLowerCase();
+//     }
+//     return invertedString;
+// }
+
+// console.log(changeCase('jAVAsCRIPT'));
+// --------------------------------------------------------------------------------
+
+// const slugify = function (title) {
+
+//     return title.toLowerCase().split(' ').join('-');
+// }
+
+// console.log(slugify('Top 5 benefits of React Framework'));
+// ----------------------------------------------------------------------------------
+
+
+
+/////////////////// псевдоелемент (...rest)
+
+
+// this is old-school method //
+
+// const fn = function () {
+//     const args = Array.from(arguments);
+//     console.log(args);
+// }
+
+// this is new method //
+
+// const fn = function (...args) {
+//     console.log(args);
+// }
+
+
+// const fn = function (a, b, c, ...args) {
+//     console.log(`${a} ${b} ${c}`);
+//     console.log(args);
+// }
+
+// fn('hello:', 1, 2, 3, 4);
+// fn('aloha:', 4, 5, 6, 7, 8);
+// fn('hi:', 7, 8, 9, 10, 11, 12);
+// ------------------------------------------------------------------------
+
+// const add = function (...args) {
+//     console.log(args);
+//     let total = 0;
+//     for (const arg of args) {
+//         total += arg;
+//     }
+//     return total;
+// }
+
+
+// console.log(add(1, 2, 3, 4, 5));
+// console.log(add(6, 7, 8, 9, 10, 11, 12));
+// console.log(add(13, 14, 15, 16, 17, 18, 19));
+// ---------------------------------------------------------------------------
+
+// const filterNumbers = function (array, ...args) {
+//     // console.log('array:',array);
+//     // console.log('args:', args);
+//     const uniqueElement = [];
+
+//     for (const element of array) {
+//         if (args.includes(element)) {
+//             uniqueElement.push(element);
+//         } 
+//     }
+//     return uniqueElement;
+// }
+
+// console.log(filterNumbers([1,2,3],4,3,6,7));
+// console.log(filterNumbers([2,9,10,11],2,13,14,15));
+// console.log(filterNumbers([16,17,18,19],20,21,17,23,24));
+
+
+
+
