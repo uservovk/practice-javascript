@@ -41,25 +41,126 @@
 
 // ----------------------------------------------------------------------
 
-const keys = [];
-const values = [];
+// const keys = [];
+// const values = [];
 
-const advert = {
-    service: "apt",
-};
+// const advert = {
+//     service: "apt",
+// };
 
-const apartment = Object.create(advert);
-apartment.descr = "Spacious apartment in the city center";
-apartment.rating = 4;
-apartment.price = 2153;
+// const apartment = Object.create(advert);
+// apartment.descr = "Spacious apartment in the city center";
+// apartment.rating = 4;
+// apartment.price = 2153;
 
-for (const key in apartment) {
+// for (const key in apartment) {
 
-if(apartment.hasOwnProperty(key)){
-    keys.push(key);
-    values.push(apartment[key]);
-}
-}
+// if(apartment.hasOwnProperty(key)){
+//     keys.push(key);
+//     values.push(apartment[key]);
+// }
+// }
 
 // -------------------------------------------------------------------
+
+// const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice(productName) {
+
+//     for (const product of products) {
+//     if(productName===product.name){
+//     return product.price;
+//     }
+// }
+// return null;
+// }
+
+// -----------------------------------------------------------------------------
+
+// function countTotalSalary(salaries) {
+//     let totalSalary = 0;
+
+// const values=Object.values(salaries);
+//     for(const value of values){
+//     totalSalary+=value;
+// }
+//     return totalSalary;
+// }
+// ------------------------------------------------------------------------
+
+// const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+
+// for(const product of products){
+//     if(productName===product.name){
+//     return product.price*product.quantity;
+//     }
+// }
+// return 0;
+// }
+// --------------------------------------------------------------------------
+
+// const friends = [
+//     { name: 'Alex', online: true },
+//     { name: 'John', online: false },
+//     { name: 'Ella', online: true },
+//     { name: 'Stan', online: false },
+//     { name: 'Grey', online: true },
+// ]
+
+// const getFriendsByStatus = function (allFriends) {
+//     const friendsByStatus = {
+//         onlineFriends: [],
+//         offlineFriends:[],
+//     }
+
+//     for (const friend of allFriends) {
+//         if (friend.online) {
+//             friendsByStatus.onlineFriends.push(friend.name);
+//             continue;
+//         }
+//         friendsByStatus.offlineFriends.push(friend.name);
+//     }
+//     return friendsByStatus;
+// }
+
+// console.log(getFriendsByStatus(friends));
+// --------------------------------------------------------------------------------------
+
+
+const cart = {
+    items: [],
+    getItems() { },
+    add(product) { },
+    remove(productName) { },
+    clear() { },
+    countTotalPrice() { },
+    increaseQuantity(productName) { },
+    decreaseQuantity(productName) { },
+};
+
+// console.tablet(cart.getItems());
+
+cart.add({ name: 'apple', price: 50 });
+cart.add({ name: 'pear', price: 60 });
+cart.add({ name: 'lemon', price: 70 });
+cart.add({ name: 'strawberry', price: 80 });
+
+const colors = [
+  { hex: "#f44336", rgb: "244,67,54" },
+  { hex: "#2196f3", rgb: "33,150,243" },
+  { hex: "#4caf50", rgb: "76,175,80" },
+  { hex: "#ffeb3b", rgb: "255,235,59" },
+];
 
