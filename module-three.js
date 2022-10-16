@@ -138,29 +138,118 @@
 // console.log(getFriendsByStatus(friends));
 // --------------------------------------------------------------------------------------
 
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
 
-const cart = {
-    items: [],
-    getItems() { },
-    add(product) { },
-    remove(productName) { },
-    clear() { },
-    countTotalPrice() { },
-    increaseQuantity(productName) { },
-    decreaseQuantity(productName) { },
-};
+// const hexColors = [];
+// const rgbColors = [];
 
-// console.tablet(cart.getItems());
+// for (const {hex,rgb} of colors) {
+//   hexColors.push(hex);
+//   rgbColors.push(rgb);
+// };
+// ----------------------------------------------------------------------------
 
-cart.add({ name: 'apple', price: 50 });
-cart.add({ name: 'pear', price: 60 });
-cart.add({ name: 'lemon', price: 70 });
-cart.add({ name: 'strawberry', price: 80 });
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
+// const { today: { low: lowToday, high: highToday, icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" },
+//         tomorrow: { low: lowTomorrow, high: highTomorrow, icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" }
+//       } = forecast;
+// -------------------------------------------------------------------------------------------------
 
-const colors = [
-  { hex: "#f44336", rgb: "244,67,54" },
-  { hex: "#2196f3", rgb: "33,150,243" },
-  { hex: "#4caf50", rgb: "76,175,80" },
-  { hex: "#ffeb3b", rgb: "255,235,59" },
-];
+// function calculateMeanTemperature(forecast) {
+//   const{today:{low:todayLow,high:todayHigh},tomorrow:{low:tomorrowLow,high:tomorrowHigh}}=forecast;
+
+//   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
+// ---------------------------------------------------------------------------------------------
+
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+  
+//   const abc={completed,category,priority,...data}
+//   console.log(abc)
+// };
+// makeTask({});
+// ----------------------------------------------------------------------------------------
+
+// function a(...args) {
+//   const numbers = [];
+//   let total = 0;
+//   for (const arg of args) {
+    
+//     if (args[0] < arg) {
+//       numbers.push(arg);
+//     }
+//   }
+//   for (const number of numbers) {
+//     total += number;
+//   }
+//   return total;
+// }
+// a(10, 1, 9, 1, 3);
+// ------------------------------------------------------------------------------
+
+// function findMatches(array, ...args) {
+//   console.log(array);
+//   console.log(args);
+//   const matches = [];
+//   for (const arg of args) {
+//     if (array.includes(arg)) {
+//       matches.push(arg);
+//   }
+// }
+//   console.log(matches);
+// }
+
+// findMatches([1, 2, 3], 1, 4, 5);
+// ----------------------------------------------------------------------------
+
+// const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+
+// const bookIndex=this.books.indexOf(oldName);
+// this.books.splice(bookIndex,1,newName);
+//   },
+// };
+
+// -------------------------------------------------------------------------------------
+
+// const cart = {
+//     items: [],
+//   getItems() {
+//     return this.items;
+//     },
+//   add(product) {
+//     this.items.push(product);
+//     },
+//     remove(productName) { },
+//     clear() { },
+//     countTotalPrice() { },
+//     increaseQuantity(productName) { },
+//     decreaseQuantity(productName) { },
+// };
+
+// cart.add({ name: 'apple', price: 50 });
+// cart.add({ name: 'pear', price: 60 });
+// cart.add({ name: 'lemon', price: 70 });
+// cart.add({ name: 'strawberry', price: 80 });
+
+// console.table(cart.getItems());
 
