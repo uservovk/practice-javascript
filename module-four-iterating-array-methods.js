@@ -130,8 +130,47 @@
 // number3(5.876876);
 // ----------------------------------------------------------------------------------
 
-const fnA = (...args)=> {
-    console.log(args);
-};
+// const players = [
+//     { id: 'player-1', name: 'Alex', timePlayed: 122, points: 234, online: true },
+//     { id: 'player-2', name: 'Poly', timePlayed: 142, points: 134, online: true },
+//     { id: 'player-3', name: 'Jack', timePlayed: 422, points: 204, online: false },
+//     { id: 'player-4', name: 'John', timePlayed: 124, points: 200, online: true },
+//     { id: 'player-5', name: 'Stan', timePlayed: 402, points: 104, online: false }
+// ];
 
-fnA(1, 2, 3, 4, 5);
+// const playerNames = players.map(player => player.name);
+// console.log(playerNames);
+
+// const res = players.map(({ name,online }) => ({ name, online }));
+// console.log(res);
+
+// const res2 = players.map(({ id, points }) => ({ id, points }));
+// console.log(res2);
+
+// const updatedPlayers = players.map(player => ({
+//     ...player,
+//     points: player.points * 1.1
+// }));
+// console.table(updatedPlayers);
+
+
+// const playerIdToUpdate = 'player-1';
+
+// const updatedPlayer = players.map(player => {
+//     if (player.id === playerIdToUpdate) {
+//         return {
+//             ...player,
+//             timePlayed:player.timePlayed+100
+//         }
+//     }
+//     return player;
+// });
+
+// // const updatedPlayer = players.map(player => 
+// //     player.id === playerIdToUpdate
+// //         ? { ...player, timePlayed: player.timePlayed + 100, }
+// //         : player,
+// // );
+
+// console.table(updatedPlayer);
+// --------------------------------------------------------------------------------------
