@@ -55,4 +55,83 @@
 // const booksByAuthor = books.filter(books => books.author === AUTHOR);
 
 // ----------------------------------------------------------------------------------
+                                            //   C A L L B A C K
 
+// const fnA = function (a, b, callback) {
+//     const result = callback(a, b);
+//     console.log(result);
+// };
+
+// fnA(5, 5, function (c, d) {
+//     return c * d;
+// });
+
+// fnA(3, 3, function (e, r) {
+//     return e / r;
+// });
+// -----------------------------------------------------------------------------
+
+// const fnA = function (array,test) {
+//     const filteredArray = [];
+
+//     for (const el of array) {
+//         const passed = test(el);
+//         if (passed) {
+//             filteredArray.push(el);
+//         }
+//     }
+//     console.log(filteredArray);
+// };
+
+// fnA([1, 2, 3, 4, 5], function (value) {
+//     return value > 3;
+// });
+
+// fnA([1, 2, 3, 4, 5, 6, 7, 8], function (value) {
+//     return value <= 3;
+// });
+
+// const fruits = [
+//     { name: 'apple', quantity: 200, isFresh: true },
+//     { name: 'pear', quantity: 150, isFresh: false },
+//     { name: 'banana', quantity: 100, isFresh: true },
+// ];
+
+// fnA(fruits, function (fruit) {
+//     return fruit.quantity >= 150;
+// });
+
+// fnA(fruits, function (fruit) {
+//     return fruit.name === 'apple';
+// });
+// -----------------------------------------------------------------------------------
+                                            //    C L O U S U R E 
+
+// const normalizedNumber = function (places) {
+//     return function (number) {
+//         return Number(number.toFixed(places));
+//     };
+// }
+
+// const number2 = normalizedNumber(2);
+
+// console.log(number2(1.2334456));
+
+
+// const normNumber = function (places) {
+//     const numbers = function (number) {
+//         console.log(Number(number.toFixed(places)));
+//     };
+//     return numbers;
+// };
+
+// const number3 = normNumber(3);
+
+// number3(5.876876);
+// ----------------------------------------------------------------------------------
+
+const fnA = (...args)=> {
+    console.log(args);
+};
+
+fnA(1, 2, 3, 4, 5);
