@@ -174,3 +174,85 @@
 
 // console.table(updatedPlayer);
 // --------------------------------------------------------------------------------------
+
+// const getUsersWithEyeColor = (users, color) => users.filter(
+//     (user) => user.eyeColor === color);
+// ---------------------------------------------------------------------------------------
+
+// const getUsersWithFriend = (users, friendName) =>
+//     users.filter((user) => user.friends.includes(friendName));
+// ----------------------------------------------------------------------------------------
+
+// const getFriends = (users) => users.flatMap(user => user.friends).filter((friend, index, array)
+//     => array.indexOf(friend) === index);
+// -------------------------------------------------------------------------------------------
+
+// const players = {
+//     mango: 1270,
+//     poly: 468,
+//     ajax: 710,
+//     kiwi: 244
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+
+// const totalPlayTime = playtimes.reduce((previousValue,playtime)=>{
+//     return previousValue+playtime;
+// },);
+
+// const averagePlayTime = totalPlayTime / playtimes.length;
+// -----------------------------------------------------------------------------------
+
+// const players = [
+//     { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//     { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//     { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//     { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+
+// const totalAveragePlaytimePerGame = players.reduce((total,player)=>{
+//     return (player.playtime/player.gamesPlayed)+total;
+// }, 0);
+// --------------------------------------------------------------------------------------------
+
+// const books = [
+//     {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//     },
+//     {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//     },
+//     {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//     },
+//     { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//     {
+//     title: "The Dreams in the Witch House",
+//     author: "Howard Lovecraft",
+//     rating: 8.67,
+//     },
+// ];
+// const MIN_BOOK_RATING = 8;
+
+// const names = [...books].sort((firstBook, secondBook) =>
+//     firstBook.author.localeCompare(secondBook.author))
+//     .filter(book => book.rating > MIN_BOOK_RATING).map(book => book.author);
+
+// -----------------------------------------------------------------------------------
+
+// const getSortedFriends = users => [...users] .flatMap(user=>user.friends)
+// .filter((friend,index,users)=>users.indexOf(friend)===index)
+// .sort((a,b)=>a.localeCompare(b));
+
+// ----------------------------------------------------------------------------------------
+
+// const getTotalBalanceByGender = (users, gender) =>
+//     [...users]
+//         .filter(user => user.gender === gender)
+//         .map(user => user.balance)
+//         .reduce((totalBalance, number) => totalBalance += number, 0);
