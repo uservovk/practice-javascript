@@ -573,7 +573,7 @@
 // ----------------------------------------------------------------------------
 
 /**find the largest number in an array
- * @param {number[]} numbers
+//  * @param {number[]} numbers
  */
 
 // function findLargestNumber(numbers) {
@@ -602,3 +602,49 @@
 // }
 // calcAverage(1, 2, 3, 4, 5);
 // ----------------------------------------------------------------------------
+
+// function formatTime(totalMinutes) {
+//     const hours = Math.floor(totalMinutes / 60);
+//     const minutes = totalMinutes % 60;
+//     const doubleDigitHours = String(hours).padStart(2, 0);
+//     const doubleDigitMinutes = String(minutes).padStart(2, 0);
+//     return `${doubleDigitHours}:${doubleDigitMinutes}`;
+// }
+
+// console.log(formatTime(100));
+// console.log(formatTime(350));
+// console.log(formatTime(750));
+// ---------------------------------------------------------------------------------------
+
+const names = ['alex', 'john', 'felix', 'tom', 'jerry'];
+
+// function addName(newName) {
+//         if (names.includes(newName)) {
+//             console.log(`there is ${newName} in the list`);
+//             return;
+//         } 
+//         names.push(newName);
+// };
+
+// addName('tom');
+
+// function removeName(nameRemove) {
+//     const idx = names.indexOf(nameRemove);
+//     if (idx === -1) {
+//         console.log(`there is no name ${nameRemove}`);
+//     }
+//     names.splice(idx, 1);
+// };
+
+// removeName('alice');
+
+
+
+// function updateNames(oldName, newName) {
+//     const idx = names.indexOf(oldName);
+//     if (idx === -1) {
+//         console.log(`there is no name ${oldName}`);
+//     }
+//     names.splice(idx, 1,newName);
+// }
+// --------------------------------------------------------------------------------------
