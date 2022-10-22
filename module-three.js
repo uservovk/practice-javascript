@@ -503,3 +503,120 @@
 // };
 // ----------------------------------------------------------------------------
 
+// function fn({name:userName}={}) {
+//   console.log(userName)
+// };
+// fn({ name: 'Bobby' });
+
+
+// function cutUserData({birthday,phone,...rest}) {
+//   const newUser = {birthday,phone};
+//   console.log(newUser);
+// };
+// function cutUserData(user) {
+//   const newUser = {};
+//   for (const key in user) {
+//     if (key !== 'birthday' && key !== 'phone') {
+//       newUser[key] = user[key];
+//     }
+//   }
+//   console.log(newUser);
+// };
+
+// cutUserData({
+//   name: 'Bob',
+//   birthday: '12.11.2000',
+//   phone: '555-333-212',
+//   eyes: 'blue',
+// });
+
+// cutUserData({
+//   name: 'Bill',
+//   birthday: '10.01.2001',
+//   phone: '125-553-202',
+//   hobby:[],
+// });
+// ---------------------------------------------------------------------------------------
+
+// function fnC({ names='', numbers='' }) {
+//         const namesArr = names.split(',');
+//         const numbersArr = numbers.split(',');
+//         for (let i = 0; i < namesArr.length; i += 1){
+//                 console.log(namesArr[i] , numbersArr[i])
+//         }
+// };
+
+// fnC({
+//   names: 'Sam,Billy,Jerry',
+//   numbers: '8564576,4947676,116767'
+// });
+// --------------------------------------------------------------------------
+// const user = {
+//   name: "Jacques Gluke",
+//   tag: "jgluke",
+//   stats: {
+//     followers: 5603,
+//     views: 4827,
+//     likes: 1308,
+//   },
+// };
+
+// const {
+//   name:userName,
+//   tag,
+//   stats: { followers, views: userViews, likes: userLikes }
+// } = user;
+// -----------------------------------------------------------------------------------
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "На березі спокійних вод",
+//     author: "Роберт Шеклі",
+//     rating: 8.51,
+//   },
+// ];
+
+// for (const book of books) {
+//   console.log(book.title);
+//   console.log(book.author);
+//   console.log(book.rating);
+// };
+
+// for (const book of books) {
+//   const { title, author, rating } = book;
+//   console.log(title);
+// };
+
+// for (const { title, author, rating } of books) {
+//   console.log(rating);
+// };
+// ---------------------------------------------------------------------------
+
+// function transformUserName({ firstName, lastName, ...otherProps }) {
+//   return {
+//     fullName: `${firstName} ${lastName}`,
+//     ...otherProps,
+//   }
+// };
+
+// console.log(transformUserName({
+//   id: 1,
+//   firstName: 'John',
+//   lastName: 'Corban',
+//   hobby:'football',
+//   car:true,
+// }));
+
+// console.log(transformUserName({
+//   id: 2,
+//   firstName: 'Chuck',
+//   lastName: 'Norris',
+//   hobby:'horses',
+//   car:false,
+// }));
+// ----------------------------------------------------------------------------
