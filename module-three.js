@@ -472,3 +472,34 @@
 // console.log(account.getTransactionTotal('withdraw'));
 // account.withdraw(350);
 // ------------------------------------------------------------------------------------------
+
+// const bookShelf = {
+//   books: ['Alice', 'Peter Pen'],
+  
+//   getBooks() {
+//     return this.books;
+//   },
+
+//   addBook(bookName) {
+//     for (const book of this.books) {
+//       if (book === bookName) {
+//         console.log(`book ${bookName} already in the list`);
+//         return;
+//       };
+//     };
+//     this.books.push(bookName);
+//   },
+
+//   removeBook(bookName) {
+//     const bookIndex = this.books.indexOf(bookName);
+//     for (const book of this.books) {
+//       if (bookIndex === -1) {
+//         console.log(`sorry, there is no book ${bookName} in the list`);
+//         return;
+//       };
+//     };
+//     this.books.splice(bookIndex, 1);
+//   },
+// };
+// ----------------------------------------------------------------------------
+
