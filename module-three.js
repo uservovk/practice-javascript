@@ -255,8 +255,8 @@
 //       if (this.potions[i].name ===potionName) {
 //       this.potions.splice(i, 1);
 //     }
-//     } 
-// return `Potion ${potionName} is not in inventory!`; 
+//     }
+// return `Potion ${potionName} is not in inventory!`;
 //   },
 //   updatePotionName(oldName, newName) {
 //     for(const potion of this.potions){
@@ -295,7 +295,7 @@
 //     items.push(newProduct);
 //   },
   
-//   remove(productName) { 
+//   remove(productName) {
 //     const { items } = this;
 //     for (let i = 0; i < items.length; i+=1) {
 //       const { name } = items[i];
@@ -307,10 +307,10 @@
 //         console.log('index',i);
 //         items.splice(i, 1);
 //       }
-//     } 
+//     }
 //   },
   
-//   clear() { 
+//   clear() {
 //     this.items = [];
 //   },
     
@@ -348,21 +348,127 @@
 // console.log(cart.getItems());
 // ----------------------------------------------------------------
 
-const user = {
-  name: 'Dima',
-  age: 25,
-  hobby: 'football',
-  premium: true,
-};
+// const user = {
+//   name: 'Dima',
+//   age: 25,
+//   hobby: 'football',
+// };
 
-user.mood = 'happy';
-user['edu'] = 'higher';
-user.age = 26;
-user.premium = false;
+// user.age = 26;
+// user['mood'] = 'happy';
 
-const keys = Object.keys(user);
-for (const key of keys) {
-  
-}
+// const keys = Object.keys(user);
 
-console.log(user);
+// for (const key of keys) {
+//   console.log(`${key}: ${user[key]}`);
+// };
+// --------------------------------------------------------------------------------------
+
+// const numbers = {
+//   one: 53,
+//   two: 66,
+//   three: 56,
+// };
+// const values = Object.values(numbers);
+// let total = 0;
+// for (const number of values) {
+//   total += number;
+// };
+
+// const sum = values.reduce((sum, number) => sum + number);
+// --------------------------------------------------------------------------------------
+
+// const stones = [
+//   { name: 'red', price: 234, quantity: 5 },
+//   { name: 'yellow', price: 456, quantity: 23 },
+//   { name: 'blue', price: 678, quantity: 45 },
+// ];
+
+// const balls = [
+//   { name: 'red', price: 124, quantity: 2 },
+//   { name: 'yellow', price: 136, quantity: 3 },
+//   { name: 'blue', price: 148, quantity: 5 },
+// ];
+
+// function calcTotalPrice(data, nameCalc) {
+//   for (const element of data) {
+//     // const name = element.name;
+//     // const price = element.price;
+//     // const quantity = element.quantity;
+//     const { name, price, quantity } = element;
+    
+//     if (name === nameCalc) {
+//       return quantity * price;
+//     }
+//   }
+// };
+// ------------------------------------------------------------------------
+// const Transaction = {
+//   DEPOSIT: 'DEPOSIT',
+//   WITHDRAW: 'withdraw',
+// };
+
+
+// const account = {
+//   balance: 0,
+//   transactions: [],
+
+//   createTransaction(amount, type) {
+//     const transaction = {
+//       id: this.transactions.length+1,
+//       amount,
+//       type,
+//       date: new Date(),
+//     };
+//     this.transactions.push(transaction);
+//   },
+
+//   deposit(amount) {
+//     this.balance += amount;
+//     this.createTransaction(amount, 'deposit');
+//   },
+
+//   withdraw(amount) {
+//     if (amount > this.balance) {
+//       console.log('sorry, not enough fund');
+//       return;
+//     };
+//     this.balance -= amount;
+//     this.createTransaction(amount, 'withdraw');
+//   },
+
+//   getBalance() {
+//     return this.balance;
+//   },
+
+//   getTransactionDetails(id) {
+//     for (const tr of this.transactions) {
+//       if (tr.id === id) {
+//         return tr;
+//       };
+//     };
+//     return 'transaction not found';
+//   },
+
+//   getTransactionTotal(type) {
+//     let sum = 0;
+//     for (const tr of this.transactions) {
+//       if (tr.type === type) {
+//         sum += tr.amount;
+//       };
+//     }; return sum;
+//   },
+// };
+
+// account.deposit(100);
+// account.deposit(500);
+// account.withdraw(120);
+// account.withdraw(68);
+// account.deposit(143);
+// account.withdraw(234);
+// console.log(account.balance);
+// console.log(account.transactions);
+// console.log(account.getTransactionDetails(6));
+// console.log(account.getTransactionTotal('withdraw'));
+// account.withdraw(350);
+// ------------------------------------------------------------------------------------------
