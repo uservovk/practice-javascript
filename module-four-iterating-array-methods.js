@@ -273,3 +273,35 @@
 // doMath(60, 2, function (x, y) { return x / y });
 // -----------------------------------------------------------
 
+// const tweets = [
+//     { id: 'player-1', likes: 35, tags:['js','nodejs'], points: 234, online: true },
+//     { id: 'player-2', likes: 345, tags:['java','js'], points: 134, online: true },
+//     { id: 'player-3', likes: 23, tags: ['python','kotlin'], points: 204, online: false },
+//     { id: 'player-4', likes: 65, tags:['swift','ruby','php'], points: 200, online: true },
+//     { id: 'player-5', likes: 25, tags:['php','ruby','C','C++'], points: 104, online: false }
+// ];
+// const allTags = tweets.reduce((total, tweet) =>
+//     [...total, ...tweet.tags]
+// , []);
+
+// const tagsStat = allTags.reduce((acc, tag) => {
+//     console.log(acc)
+//     if (acc[tag]) {
+//         return {
+//             ...acc,
+//             [tag]: acc[tag] += 1,
+//         };
+//     }
+//     return {
+//         ...acc,
+//         [tag]: 1,
+//     };
+// }, {});
+
+// const tagsStat2 = allTags.reduce((acc, tag) =>
+//     ({
+//     ...acc,
+//     [tag]: acc[tag] ? acc[tag] + 1 : 1,
+//     }),
+//     {});
+// ------------------------------------------------------------------------------------
