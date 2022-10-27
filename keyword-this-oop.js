@@ -129,24 +129,74 @@
 // console.log(myFruit.price);
 // ----------------------------------------------------------------------------
 
-class Hero{
-    constructor({name='hero',xp=0}={}) {
-        this.name = name;
-        this.xp = xp;
-    }
+// class Hero{
+//     constructor({name='hero',xp=0}={}) {
+//         this.name = name;
+//         this.xp = xp;
+//     }
 
-    gainXp(amount) {
-        this.xp += amount;
-        console.log(`${this.name} gets ${amount} experience`);
-    }
-}
+//     gainXp(amount) {
+//         this.xp += amount;
+//         console.log(`${this.name} gets ${amount} experience`);
+//     }
+// }
 
-class Warrior extends Hero{
-    constructor() {
-        super();
-    }
-}
-const mango = new Warrior({
-    name: 'Mango',
-    xp:1000,
-})
+// -------------------------------------------------------------------------------
+//                                                     '🦸‍♂️'
+// class Hero{
+//     static description = 'basic hero';
+
+//     constructor({name='hero',xp=0}={}) {
+//         this.name = name;
+//         this.xp = xp; 
+//     }
+
+//     gainXp(value) {
+//         console.log(`${this.name} gets ${value} xp`);
+//         this.xp += value;
+//     }
+//     getXp() {
+//         return (`${this.name} has ${this.xp} xp`)
+//     }
+
+// };
+
+// const myHero = new Hero({name:'Kiwi',xp:100});
+
+// myHero.gainXp(200);
+// console.log(myHero.getXp());
+
+
+// class Warrior extends Hero{
+//     constructor({weapon,...restProps}={}) {
+//         super(restProps);
+//         this.weapon = weapon;
+//     }
+
+//     attack() {
+//         console.log(`${this.name} attacks with ${this.weapon}`);
+//     }
+// }
+
+// const myWarrior = new Warrior({name:'Poly', xp:200, weapon:'sword'});
+// myWarrior.attack();
+// myWarrior.gainXp(200);
+// console.log(myWarrior.getXp());
+
+// class Berserk extends Warrior{
+//     constructor({warcry,...restProps} = {}) {
+//         super(restProps);
+//         this.warcry = warcry;
+//     }
+//     babyRage() {
+//         console.log(`${this.name} rages ${this.warcry}`);
+//     }
+// }
+
+// const myBerserk = new Berserk({ name: 'Ajax', xp: 400, weapon: 'ax', warcry: 'waaaaaa' });
+
+// myBerserk.babyRage();
+// myBerserk.attack();
+// myBerserk.gainXp(350);
+// console.log(myBerserk.getXp());
+// ------------------------------------------------------------------------------------------
