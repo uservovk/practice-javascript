@@ -148,7 +148,7 @@
 
 //     constructor({name='hero',xp=0}={}) {
 //         this.name = name;
-//         this.xp = xp; 
+//         this.xp = xp;
 //     }
 
 //     gainXp(value) {
@@ -200,3 +200,86 @@
 // myBerserk.gainXp(350);
 // console.log(myBerserk.getXp());
 // ------------------------------------------------------------------------------------------
+// class Storage{
+//     constructor(items) {
+//         this.items = items;
+//     }
+
+//     getItems() {
+//         return this.items;
+//     }
+//     addItems(newItem) {
+//         this.items.push(newItem);
+//     }
+//     removeItems(itemName) {
+//         this.items = this.items.filter((item) => item !== itemName);
+//     }
+// }
+
+// const storage = new Storage(['🍎', '🍐', '🍍', '🥭']);
+
+// console.log(storage.getItems());
+// storage.addItems('🥝');
+// console.log(storage.getItems());
+// storage.removeItems('🍍');
+// console.log(storage.getItems());
+// ------------------------------------------------------------------------
+
+// class Notes{
+//     static Priority = {
+//         LOW: 'low',
+//         NORMAL: 'normal',
+//         HIGH: 'high',
+//     };
+
+//     constructor(items) {
+//         this.items = items;
+//     }
+
+//     addNotes(item){
+//             this.items.push(item);
+//     }
+    
+//     removeNote(noteText) {
+//         this.items = this.items.filter(({ text }) => text !== noteText);
+//     }
+    
+//     updateNote(text,priority) {
+//         this.items = this.items.map((item) => item.text === text
+//             ? { ...item, priority }
+//             : item);
+//     }
+// }
+
+// const myNotes = new Notes([]);
+
+// myNotes.addNotes({text:'On Friday morning learn js',priority:Notes.Priority.HIGH,})
+// myNotes.addNotes({text:'In the afternoon i have to go shopping',priority:Notes.Priority.NORMAL,})
+// myNotes.removeNote('On Friday morning learn js');
+// console.log(myNotes.items);
+// myNotes.updateNote('In the afternoon i have to go shopping', Notes.Priority.LOW);
+// console.log(myNotes.items);
+// ---------------------------------------------------------------------------------------
+
+class Toggle{
+    constructor({ on = false } = {}) {
+        this.on = on;
+    }
+
+    toggle() {
+        this.on = !this.on;
+    }
+    // toggle() {
+    //     this.on = this.on === true ? false : true;
+    // }
+}
+
+const firstToggle = new Toggle({ on: true });
+console.log(firstToggle.on);
+firstToggle.toggle();
+console.log(firstToggle.on);
+firstToggle.toggle();
+console.log(firstToggle.on);
+firstToggle.toggle();
+console.log(firstToggle.on);
+firstToggle.toggle();
