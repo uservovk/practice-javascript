@@ -252,14 +252,37 @@ const tableRef = document.querySelector('.js-transaction-table');
 tableRef.insertAdjacentHTML('beforeend', makeTransactionTableRows);
 // -------------------------------------------------------------------
 
-const getItemTemplate = (text) =>`
-    <li class="page-item">
+const getItemTemplate = ({text,isDone}) => `<li class="page-item">
         <div>
-            <input type="checkbox" checked>
+            <input type="checkbox" ${isDone? 'checked':''}>
             <span>${text}</span>
         </div>
         <button type="button">x</button>
     </li>
-    `
+    `;
 
-const items = ['Item 1', 'Item 2', 'Item 3'];
+const actions = {
+    list: document.querySelector('.page-list'),
+};
+
+const render = () => {
+    const actionsList = items.map(getItemTemplate).join('');
+    actions.list.innerHTML = '';
+    actions.list.insertAdjacentHTML('beforeend', actionsList);
+}
+
+const items = [
+    {
+        text: 'buy a loaf of bread',
+        isDone: true,
+    },
+    {
+        text: 'buy a bar of chocolate',
+        isDone: false,
+    },
+    {
+        text: 'buy a bottle of milk',
+        isDone: false,
+    },
+];
+render();
