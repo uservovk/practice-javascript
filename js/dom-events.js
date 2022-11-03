@@ -250,3 +250,16 @@ const makeTransactionTableRows = transactions
 
 const tableRef = document.querySelector('.js-transaction-table');
 tableRef.insertAdjacentHTML('beforeend', makeTransactionTableRows);
+// -------------------------------------------------------------------
+
+const getItemTemplate = (text) =>`
+    <li class="page-item">
+        <div>
+            <input type="checkbox" checked>
+            <span>${text}</span>
+        </div>
+        <button type="button">x</button>
+    </li>
+    `
+
+const items = ['Item 1', 'Item 2', 'Item 3'];

@@ -5,9 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM. Events</title>
-    <link rel="stylesheet" href="./styles.css">
+    <style>
+        ul {
+            list-style: none;
+        }
+        .page-form{
+            margin-bottom: 5px;
+        }
+        .page-list{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            padding: 10px;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        .page-item{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border: 1px solid grey;
+        }
+        .js-transaction-table{
+            margin-bottom: 35px;
+        }
+    </style>
 </head>
 <body>
+    <form class="page-form" action="">
+        <label for="">
+            <span>Text</span>
+            <input type="text">
+        </label>
+        <button type="submit">+ Add</button>
+    </form>
+    <ul class="page-list">
+        <li class="page-item">
+            <div>
+                <input type="checkbox" checked>
+                <span>Lorem ipsum</span>
+            </div>
+            <button type="button">x</button>
+        </li>
+        <li class="page-item">
+            <div>
+                <input type="checkbox" checked>
+                <span>Lorem ipsum</span>
+            </div>
+            <button type="button">x</button>
+        </li>
+        <li class="page-item">
+            <div>
+                <input type="checkbox" checked>
+                <span>Lorem ipsum</span>
+            </div>
+            <button type="button">x</button>
+        </li>
+        <li class="page-item">
+            <div>
+                <input type="checkbox" checked>
+                <span>Lorem ipsum</span>
+            </div>
+            <button type="button">x</button>
+        </li>
+    </ul>
+
     <table class="js-transaction-table">
         <thead>
             <tr>
