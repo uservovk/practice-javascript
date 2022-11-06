@@ -7,10 +7,26 @@ const btnCreateRef = inputRef.nextElementSibling;
 const btnDestroyRef = btnCreateRef.nextElementSibling;
 const boxOfCreatedElements=document.querySelector('#boxes')
 
-function createBoxes(amount){
-  const createdBox = document.createElement('div');
-  
-  return createdBox*amount;
-}
-createBoxes()
-document.boxOfCreatedElements.append()
+// createBoxes()
+// document.boxOfCreatedElements.append();
+
+// btnCreateRef.addEventListener('click', createBoxes);
+
+inputRef.addEventListener('input',onInputRefInput)
+
+let amount = 0;
+
+function onInputRefInput(event) {
+    // console.log(event.target);
+    const amount= event.target.value;
+    return amount;
+    
+};
+// console.log(amount);
+// console.log(onInputRefInput());
+// btnCreateRef.addEventListener('click',createBoxes)
+
+// function createBoxes(amount) {
+//     const boxes = document.createElement('div');
+//     return boxes * amount;
+// };
