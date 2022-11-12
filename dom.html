@@ -29,18 +29,34 @@
         .js-transaction-table{
             margin-bottom: 35px;
         }
+        .btn_add{
+            background-color: green;
+            border-radius: 4px;
+            border-color: transparent;
+            color: white;
+            font-size: 13px;
+        }
+        .btn_close{
+            background-color: red;
+            border-radius: 4px;
+            color: white;
+            border-color: transparent;
+        }
     </style>
 </head>
 <body>
-    <form class="page-form" action="">
-        <label for="">
+    <form class="page-form">
+        <label>
             <span>Text</span>
-            <input type="text">
+            <input type="text" name="name"
+            placeholder="enter text...">
         </label>
-        <button type="submit">+ Add</button>
+        <button class="btn_add" type="submit">+ Add</button>
     </form>
     <ul class="page-list">
     </ul>
+
+    <hr color="darkblue"/>
 
     <table class="js-transaction-table">
         <thead>
@@ -55,6 +71,8 @@
             </tr>
         </thead>
     </table>
+
+    <hr color="darkblue"/>
 
     <h1 class="page-title">Title</h1>
     <ul class="site-nav">

@@ -250,39 +250,50 @@ const makeTransactionTableRows = transactions
 
 const tableRef = document.querySelector('.js-transaction-table');
 tableRef.insertAdjacentHTML('beforeend', makeTransactionTableRows);
-// -------------------------------------------------------------------
 
-const getItemTemplate = ({text,isDone}) => `<li class="page-item">
-        <div>
-            <input type="checkbox" ${isDone? 'checked':''}>
-            <span>${text}</span>
-        </div>
-        <button type="button">x</button>
-    </li>
-    `;
+// ------------------TO DO LIST---------------------------
 
-const actions = {
+import { getItemTemplate } from './items.js';
+import { items } from './items.js';
+
+const refs = {
     list: document.querySelector('.page-list'),
+    form:document.querySelector('.page-form'),
 };
 
 const render = () => {
-    const actionsList = items.map(getItemTemplate).join('');
-    actions.list.innerHTML = '';
-    actions.list.insertAdjacentHTML('beforeend', actionsList);
-}
+    const refsList = items.map(getItemTemplate);
+    
+    refs.list.innerHTML = '';
+    refs.list.insertAdjacentHTML('beforeend', refsList.join(''));
+};
 
-const items = [
-    {
-        text: 'buy a loaf of bread',
-        isDone: true,
-    },
-    {
-        text: 'buy a bar of chocolate',
+const addItem = (text) => {
+    const newTask = {
+        text,
         isDone: false,
-    },
-    {
-        text: 'buy a bottle of milk',
-        isDone: false,
-    },
-];
+    };
+    
+    items.push(newTask);
+};
+
+const onSubmit = (e) => {
+    //const value=e.target.elements.name.value;
+    const { value } = e.target.elements.name;
+    e.preventDefault();
+    addItem(value);
+    render();
+    refs.form.reset();
+};
+
+const onListClick = (e) => { 
+    console.log(e.target);
+    console.log(e.currentTarget);
+};
+//run
 render();
+
+//add event listener
+refs.form.addEventListener('submit', onSubmit);
+refs.list.addEventListener('click', onListClick);
+// ---------------------------------------------------------------
